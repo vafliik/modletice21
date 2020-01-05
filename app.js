@@ -1,6 +1,8 @@
 const createError = require('http-errors');
 const express = require('express');
 const path = require('path');
+const serverless = require('serverless-http');
+const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 
@@ -19,6 +21,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+const router = express.Router();
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
@@ -40,4 +44,9 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+app.use(bodyParser.json());
+app.use('/.netlify/functions/server', router);  // path must route to lambda
+app.use('/', (req, res) => res.sendFile(path.join(__dirname, '../index.html')));
+
 module.exports = app;
+module.exports.handler = serverless(app);
