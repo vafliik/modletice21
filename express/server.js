@@ -24,9 +24,15 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 const router = express.Router();
 
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
-app.use('/about', aboutRouter);
+// app.use('/', indexRouter);
+// app.use('/users', usersRouter);
+// app.use('/about', aboutRouter);
+
+/* GET home page. */
+router.get('/', function(req, res, next) {
+  res.render('index', { page: 'Home', menuId: 'home' });
+});
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
