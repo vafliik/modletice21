@@ -5,11 +5,14 @@ const serverless = require('serverless-http');
 const app = express();
 const bodyParser = require('body-parser');
 
+// view engine setup
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
+
 const router = express.Router();
-router.get('/', (req, res) => {
-  res.writeHead(200, { 'Content-Type': 'text/html' });
-  res.write('<h1>Hello from Express.js!</h1>');
-  res.end();
+/* GET home page. */
+router.get('/', function(req, res, next) {
+  res.render('index', { page: 'Home', menuId: 'home' });
 });
 router.get('/another', (req, res) => res.json({ route: req.originalUrl }));
 router.post('/', (req, res) => res.json({ postBody: req.body }));
