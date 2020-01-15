@@ -886,7 +886,7 @@ img {
 }
 
 .main-header .header-upper .upper-right {
-	padding-top: 28px;
+	padding-top: 10px;
 }
 
 .header-style-two .nav-outer {
@@ -908,7 +908,7 @@ img {
 	margin-left: 30px;
 	font-size: 13px;
 	color: #777777;
-	padding: 0px 0px 20px 40px;
+	padding: 0px 0px 0px 40px;
 }
 
 .main-header .info-box:last-child {
@@ -948,7 +948,7 @@ img {
 	line-height: 20px;
 	color: #666666;
 	font-size: 16px;
-	margin-bottom: 6px;
+	/* margin-bottom: 6px; */
 	font-weight: 400;
 }
 
@@ -1806,7 +1806,7 @@ img {
 .home-detail .inner h3 {
 	position: relative;
 	color: #2a2a2a;
-	font-size: 30px;
+	font-size: 25px;
 	font-weight: 400;
 	line-height: 1.2em;
 	margin-bottom: 5px;
@@ -1828,7 +1828,7 @@ img {
 .home-detail .inner .home-list li {
 	position: relative;
 	color: #7bca33;
-	font-size: 28px;
+	font-size: 24px;
 	font-weight: 500;
 	text-align: center;
 	padding-right: 20px;
@@ -1846,7 +1846,7 @@ img {
 .home-detail .inner .home-list li span {
 	position: relative;
 	color: #666666;
-	font-size: 16px;
+	font-size: 14px;
 	display: block;
 	margin-top: 8px;
 }
