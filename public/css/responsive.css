@@ -255,7 +255,7 @@
 	}
 	
 	.main-header .info-box{
-		margin-left:0px;
+		/* margin-left:0px; */
 		margin-right:20px;
 	}
 	
@@ -712,8 +712,19 @@
 	.main-slider h2{
 		font-size:40px;
 	}
+
+	.main-header .info-box:first-child {
+		margin: 0px;
+		padding: 0px;
+		min-height: 0px;
+	}
+
+	.main-header .info-box:last-child {
+		padding: 0px;
+	}
 	
 	.main-header .info-box{
+		margin-left:0px;
 		padding-left:0px;
 		text-align:center;
 		width:100%;
@@ -723,6 +734,16 @@
 		position:relative;
 		line-height:1em;
 		margin-bottom:25px;
+	}
+	.main-header .info-box .img-box{
+		position:relative;
+		line-height:1em;
+		margin-bottom:25px;
+	}
+
+	.main-header .info-box .img-box img{
+		float: none;
+		max-width: 15%;
 	}
 	
 	.header-style-two .header-upper .logo-box{
