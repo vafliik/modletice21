@@ -1051,6 +1051,16 @@ img {
 	padding: 10px 0px 10px;
 }
 
+.sticky-header .contact {
+	padding: 20px 0px 20px;
+	font-weight: 600;
+    font-size: medium;
+}
+
+.sticky-header .contact .icon{
+	margin: 0px 15px 0px 5px;
+}
+
 .fixed-header .sticky-header {
 	z-index: 999;
 	opacity: 1;
