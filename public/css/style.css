@@ -2090,7 +2090,7 @@ img {
 
 .measurement-section {
 	position: relative;
-	padding: 110px 0px 120px;
+	padding: 50px 0px 60px;
 }
 
 .measurement-section .measurement-tabs {
@@ -2416,7 +2416,7 @@ img {
 
 .agents-section {
 	position: relative;
-	padding: 110px 0px 90px;
+	padding: 50px 0px 40px;
 }
 
 .agents-section.style-two .sec-title {
@@ -3747,7 +3747,7 @@ img {
 
 .gallery-section-two {
 	position: relative;
-	padding: 190px 0px 0px;
+	padding: 60px 0px 0px;
 }
 
 .gallery-section-two .sec-title {
@@ -4072,7 +4072,7 @@ img {
 
 .plans-section {
 	position: relative;
-	padding: 120px 0px;
+	padding: 40px 0px;
 }
 
 .plans-section .title-column {
@@ -4384,7 +4384,7 @@ img {
 
 .about-section-three {
 	position: relative;
-	padding: 90px 0px 120px;
+	padding: 40px 0px 60px;
 }
 
 .about-section-three.alternate {
