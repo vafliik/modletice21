@@ -1,182 +1,156 @@
 <!-- Preloader -->
 <div class="preloader"></div>
- 	
+
 <!-- Main Header / Header Style Two-->
 <header class="main-header header-style-two">
-  <!--Header-Upper-->
+    <!--Header-Upper-->
     <div class="header-upper">
-      <div class="auto-container">
-          <div class="clearfix">
-              
-              <div class="pull-left logo-box">
-                  <div class="logo"><a href="index.html"><img src="images/logo-3.png" alt="" title=""></a></div>
+        <div class="auto-container">
+            <div class="clearfix">
+
+                <div class="pull-left logo-box">
+                    <div class="logo"><a href="/"><img src="images/logo-3.png" alt="" title=""></a></div>
                 </div>
-                
+
+                <div class="price pull-left">
+                    Rodinný dům na prodej <br />
+                    Cena: <span><%= price %>,- Kč</span>
+
+                </div>
+
                 <div class="pull-right upper-right clearfix">
-                  
+
                     <!--Info Box-->
                     <div class="upper-column info-box">
                     </div>
-                    
+
                     <!--Info Box-->
                     <div class="upper-column info-box">
                         <div class="icon-box"><span class="flaticon-map-marker"></span></div>
-                          <ul>
+                        <ul>
                             <li><strong>Modletice 21</strong></li>
-                              <li>251 01</li>
-                              <li>Praha-východ</li>
-                          </ul>
-                      </div>
-                    
+                            <li>251 01</li>
+                            <li>Praha-východ</li>
+                        </ul>
+                    </div>
+
                     <!--Info Box-->
                     <div class="upper-column info-box">
                         <div class="img-box"><img src="images/hana_hoskinsova.jpeg"></div>
-                          <ul>
+                        <ul>
                             <li><strong>Ing. Hana Hoskinsova</strong></li>
                             <li>+420 774 774 775 </li>
-                            <li><a href="hoskinsova@reality-proradost.cz">hoskinsova@reality-proradost.cz</a></li>
-                          </ul>
-                      </div>
-                    
+                            <li><a href="mailto:hoskinsova@reality-proradost.cz">hoskinsova@reality-proradost.cz</a></li>
+                        </ul>
+                    </div>
+
                 </div>
-                
+
             </div>
         </div>
     </div>
     <!--End Header Upper-->
-    
+
     <!--Header Lower-->
     <div class="header-lower">
-        
-      <div class="auto-container">
-          <div class="nav-outer clearfix">
+
+        <div class="auto-container">
+            <div class="nav-outer clearfix">
                 <!-- Main Menu -->
                 <nav class="main-menu">
                     <div class="navbar-header">
-                        <!-- Toggle Button -->    	
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
+                        <!-- Toggle Button -->
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
                         </button>
                     </div>
-                    
+
                     <div class="navbar-collapse collapse clearfix">
                         <ul class="navigation clearfix">
-                            <li class="current dropdown"><a href="#">Úvod</a>
-                                
+                            <li class="<% if (menuId === 'home') { %>current<% } %>"><a href="/">Úvod</a>
+
                             </li>
-                            <li class="dropdown"><a href="#">Detaily</a>
+                            <li class="<% if (menuId === 'details') { %>current<% } %>dropdown"><a
+                                    href="detaily">Detaily</a>
                                 <ul>
                                     <li><a href="about.html">Historie domu</a></li>
                                     <li><a href="agents.html">Dokumentace</a></li>
                                     <li><a href="agents-single.html">3D model</a></li>
                                 </ul>
                             </li>
-                            <li class="dropdown"><a href="#">Fotogalerie</a>
+                            <li class="<% if (menuId === 'gallery') { %>current<% } %>"><a
+                                    href="galerie">Fotogalerie</a>
                             </li>
 
-                            <li><a href="contact.html">Kontakt</a></li>
+                            <li class="<% if (menuId === 'contact') { %>current<% } %>"><a href="kontakt">Kontakt</a>
+                            </li>
                         </ul>
                     </div>
                 </nav>
                 <!-- Main Menu End-->
-                
+
             </div>
         </div>
     </div>
     <!--End Header Lower-->
-    
+
     <!--Sticky Header-->
     <div class="sticky-header">
-      <div class="auto-container clearfix">
-          <!--Logo-->
-          <div class="logo pull-left">
-              <a href="index.html" class="img-responsive"><img src="images/logo-small.png" alt="" title=""></a>
+        <div class="auto-container clearfix">
+            <!--Logo-->
+            <div class="logo pull-left">
+                <a href="/" class="img-responsive"><img src="images/logo-small.png" alt="" title=""></a>
             </div>
-            
+
             <!-- Sticky contact-->
             <div class="contact pull-left">
-                    <span class="icon fa fa-phone"></span>+420 774 774 775
-                    <span class="icon fa fa-envelope"></span><a href="hoskinsova@reality-proradost.cz">hoskinsova@reality-proradost.cz</a>
+                <span class="icon fa fa-phone"></span>+420 774 774 775
+                <span class="icon fa fa-envelope"></span><a
+                    href="mailto:hoskinsova@reality-proradost.cz">hoskinsova@reality-proradost.cz</a>
             </div>
 
             <!--Right Col-->
             <div class="right-col pull-right">
-                
-              <!-- Main Menu -->
+
+                <!-- Main Menu -->
                 <nav class="main-menu">
                     <div class="navbar-header">
-                        <!-- Toggle Button -->    	
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <!-- Toggle Button -->
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target=".navbar-collapse">
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
                     </div>
-                    
-                    <!-- <div class="navbar-collapse collapse clearfix">
-                        <ul class="navigation clearfix">
-                            <li class="current dropdown"><a href="#">Home</a>
-                                <ul>
-                                    <li><a href="index.html">Homepage One</a></li>
-                                    <li><a href="index-2.html">Homepage Two</a></li>
-                                    <li><a href="index-3.html">Homepage Three</a></li>
-                                    <li class="dropdown"><a href="#">Headers Style</a>
-                                        <ul>
-                                            <li><a href="index.html">Header Style One</a></li>
-                                            <li><a href="index-2.html">Header Style Two</a></li>
-                                            <li><a href="index-3.html">Header Style Three</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="dropdown"><a href="#">AboutUs</a>
-                                <ul>
-                                    <li><a href="about.html">About Us</a></li>
-                                    <li><a href="agents.html">Agents</a></li>
-                                    <li><a href="agents-single.html">Agents Single</a></li>
-                                    <li><a href="appointment.html">Appointment</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="features.html">Features</a></li>
-                            <li class="dropdown"><a href="#">Gallery</a>
-                                <ul>
-                                    <li><a href="gallery.html">Gallery Fullwidth</a></li>
-                                    <li><a href="gallery-grid.html">Gallery Three Column</a></li>
-                                    <li><a href="gallery-single.html">Gallery Single</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown"><a href="#">Blog</a>
-                                <ul>
-                                    <li><a href="blog-grid.html">Our Blog</a></li>
-                                    <li><a href="blog-detail.html">Blog Detail</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="contact.html">Contact us</a></li>
-                        </ul>
-                    </div> -->
+
                     <div class="navbar-collapse collapse clearfix">
                         <ul class="navigation clearfix">
-                            <li class="current dropdown"><a href="#">Úvod</a>
-                                
+                            <li class="<% if (menuId === 'home') { %>current<% } %>"><a href="/">Úvod</a>
+
                             </li>
-                            <li class="dropdown"><a href="#">Detaily</a>
+                            <li class="<% if (menuId === 'details') { %>current<% } %>dropdown"><a
+                                    href="detaily">Detaily</a>
                                 <ul>
                                     <li><a href="about.html">Historie domu</a></li>
                                     <li><a href="agents.html">Dokumentace</a></li>
                                     <li><a href="agents-single.html">3D model</a></li>
                                 </ul>
                             </li>
-                            <li class="dropdown"><a href="#">Fotogalerie</a>
+                            <li class="<% if (menuId === 'gallery') { %>current<% } %>"><a
+                                    href="galerie">Fotogalerie</a>
                             </li>
 
-                            <li><a href="contact.html">Kontakt</a></li>
+                            <li class="<% if (menuId === 'contact') { %>current<% } %>"><a href="kontakt">Kontakt</a>
+                            </li>
                         </ul>
                     </div>
                 </nav><!-- Main Menu End-->
             </div>
-            
+
         </div>
     </div>
     <!--End Sticky Header-->

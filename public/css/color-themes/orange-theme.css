@@ -64,7 +64,9 @@ a,
 .feature-tabs .tab-btns .tab-btn:hover, .feature-tabs .tab-btns .tab-btn.active-btn,
 .main-header .options-box .options-nav > li > a:hover,
 .main-header .sticky-header .main-menu .navigation > li:hover > a,
-.main-header .sticky-header .main-menu .navigation > li.current > a{
+.main-header .sticky-header .main-menu .navigation > li.current > a,
+.main-header .header-upper .price span
+{
 	color:#FF851B;
 }
 

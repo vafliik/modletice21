@@ -901,6 +901,16 @@ img {
 	padding: 25px 0px 25px;
 }
 
+
+.main-header .header-upper .price {
+	padding: 10px 0px 0px;
+	position: relative;
+    font-weight: 700;
+    color: #2a2a2a;
+    font-size: 18px;
+}
+
+
 .main-header .info-box {
 	position: relative;
 	float: left;
@@ -1796,7 +1806,7 @@ img {
 
 .home-detail .inner {
 	position: relative;
-	padding: 48px 48px;
+	padding: 28px 28px;
 	margin: 30px 30px !important;
 	background-color: #ffffff;
 	border-radius: 0px 50% 50% 0px;
@@ -1897,7 +1907,6 @@ img {
 	line-height: 1em;
 	font-weight: 600;
 	margin-bottom: 15px;
-	text-transform: capitalize;
 }
 
 .sec-title .text {
@@ -4192,7 +4201,7 @@ img {
 .fluid-section-two .content-column .inner-box {
 	position: relative;
 	max-width: 700px;
-	padding: 170px 15px 130px 60px;
+	padding: 0px 15px 130px 60px;
 }
 
 .fluid-section-two .content-column .inner-box h2 {
@@ -4402,7 +4411,7 @@ img {
 
 .about-section-three .title-column .inner-column {
 	position: relative;
-	padding-top: 55px;
+	padding-top: 15px;
 }
 
 .about-section-three .title-column .inner-column h2 {

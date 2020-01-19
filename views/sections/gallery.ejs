@@ -1,11 +1,13 @@
 <!--Gallery Section Two-->
 <section class="gallery-section-two">
+    <% if (menuId === 'home') { %>
     <div class="auto-container">
         <!--Sec Title-->
         <div class="sec-title centered">
             <h2>Galerie</h2>
         </div>
     </div>
+    <% } %>
 
     <!--MixitUp Galery-->
     <div class="mixitup-gallery">
@@ -14,12 +16,9 @@
             <div class="filters text-center clearfix">
                 <ul class="filter-tabs filter-btns clearfix">
                     <li class="active filter" data-role="button" data-filter="all">Vše</li>
-                    <li class="filter" data-role="button" data-filter=".zahrada">Zahrada</li>
-                    <li class="filter" data-role="button" data-filter=".pokoj">Pokoje</li>
-                    <li class="filter" data-role="button" data-filter=".obyvak">Obývák</li>
-                    <li class="filter" data-role="button" data-filter=".kuchyn">Kuchyň</li>
-                    <li class="filter" data-role="button" data-filter=".koupelna">Koupelny</li>
-                    <li class="filter" data-role="button" data-filter=".venek">Venkovní</li>
+                    <% for (var c in categories) {%>
+                    <li class="filter" data-role="button" data-filter=".<%= categories[c].filter %>"><%= categories[c].title %></li>
+                    <% } %>
                 </ul>
             </div>
         </div>
