@@ -54,7 +54,7 @@ let categories = [
 ]
 /* GET home page. */
 router.get('/', function (req, res, next) {
-  res.render('index', { menuId: 'home', images: images, categories: categories });
+  res.render('index', { menuId: 'home', page: 'Úvod', images: images, categories: categories });
 });
 
 module.exports = router;

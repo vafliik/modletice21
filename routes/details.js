@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.render('contact', { menuId: 'contact', page: 'Kontakt' });
+  res.render('details', { menuId: 'details', page: 'Detailní popis' });
 });
 
 module.exports = router;

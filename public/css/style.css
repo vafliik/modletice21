@@ -5831,11 +5831,11 @@ img {
 
 .sidebar-page-container {
 	position: relative;
-	padding: 115px 0px 80px;
+	padding: 115px 0px 0px;
 }
 
 .sidebar-page-container .content-side, .sidebar-page-container .sidebar-side {
-	margin-bottom: 40px;
+	margin-bottom: 0px;
 }
 
 /*Sidebar Title*/
