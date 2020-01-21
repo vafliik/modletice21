@@ -68,3 +68,13 @@ yarn-error.log
 .yarn-integrity
 
 functions/
+
+# Heroku
+heroku-nginx/nginx
+heroku-nginx/nginx.conf
+heroku-nginx/nginx.pid
+heroku-nginx/proxy_temp
+heroku-nginx/uwsgi_temp
+heroku-nginx/scgi_temp
+heroku-nginx/client_body_temp
+heroku-nginx/fastcgi_temp
