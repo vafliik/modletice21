@@ -1,0 +1,31 @@
+worker_processes auto;
+
+events {
+	worker_connections 768;
+}
+
+http {
+	sendfile on;
+	tcp_nopush on;
+	tcp_nodelay on;
+	keepalive_timeout 65;
+	types_hash_max_size 2048;
+	gzip on;
+
+	include /app/heroku-nginx/mime.types;
+	default_type application/octet-stream;
+
+        server {
+            listen %PORT%;
+            if ($http_x_forwarded_proto != "https") {
+              return 301 https://$host$request_uri;
+            } 
+
+            location / {
+                proxy_pass http://127.0.0.1:3000;
+                proxy_http_version 1.1;
+                proxy_set_header Upgrade $http_upgrade;
+                proxy_set_header Connection "Upgrade";
+            }
+        }
+}
