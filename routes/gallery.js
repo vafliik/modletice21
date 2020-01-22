@@ -93,4 +93,19 @@ router.get('/image/:id', function (req, res, next) {
   res.sendFile(path.join(__dirname, '../public/images/gallery/', id + extension))
 });
 
+//TODO Refactor
+/* GET slider image by id. */
+router.get('/slider/:id', function (req, res, next) {
+  var id = req.params.id;
+
+  if (req.header('accept').includes("webp")) {
+    var extension = '.webp'
+    console.log('--> accepts webp ->' + extension)
+  } else {
+    var extension = '.png'
+    console.log('--> does not webp ->' + extension)
+  }
+  res.sendFile(path.join(__dirname, '../public/images/main-slider', 'image-' + id + extension))
+});
+
 module.exports = router;
