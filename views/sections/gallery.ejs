@@ -30,7 +30,11 @@
             <div class="gallery-block-two col-lg-3 col-md-4 col-sm-6 col-xs-12 mix all <%= images[image].tags %>">
                 <div class="inner-box">
                     <figure class="image-box">
-                        <img src="images/gallery/thumbs/<%= images[image].name %>_thumb.png" alt="">
+                            <picture>
+                                    <source srcset="images/gallery/thumbs/<%= images[image].name %>_thumb.webp" type="image/webp">
+                                    <img src="images/gallery/thumbs/<%= images[image].name %>_thumb.png" alt="Galerie">
+                                  </picture>
+
                         <!--Overlay Box-->
                         <div class="overlay-box">
                             <div class="overlay-inner">
