@@ -13,10 +13,6 @@ const app = express();
 
 app.locals.price = '10 605 000';
 
-console.log('kokodak');
-
-
-
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -31,6 +27,7 @@ app.use('/', indexRouter);
 app.use('/galerie', galleryRouter);
 app.use('/kontakt', contactRouter);
 app.use('/detaily', detailsRouter);
+
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
