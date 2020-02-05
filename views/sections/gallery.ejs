@@ -4,43 +4,48 @@
     <div class="auto-container">
         <!--Sec Title-->
         <div class="sec-title centered">
-            <h2>Galerie</h2>
+            <h2>Ukázka z galerie</h2>
+            <p>Všechny fotografie najdete ve <a href="galerie">fotogalerii</a></p>
         </div>
     </div>
     <% } %>
 
     <!--MixitUp Galery-->
     <div class="mixitup-gallery">
+        <% if (menuId !== 'home') { %>
         <div class="auto-container">
             <!--Filter-->
             <div class="filters text-center clearfix">
                 <ul class="filter-tabs filter-btns clearfix">
                     <li class="active filter" data-role="button" data-filter="all">Vše</li>
                     <% for (var c in categories) {%>
-                    <li class="filter" data-role="button" data-filter=".<%= categories[c].filter %>"><%= categories[c].title %></li>
+                    <li class="filter" data-role="button" data-filter=".<%= categories[c].filter %>">
+                        <%= categories[c].title %></li>
                     <% } %>
                 </ul>
             </div>
         </div>
+        <% } %>
 
         <div class="filter-list clearfix">
-            
+
             <% for (var image in images) {%>
             <!--Gallery Block Two-->
             <div class="gallery-block-two col-lg-3 col-md-4 col-sm-6 col-xs-12 mix all <%= images[image].tags %>">
                 <div class="inner-box">
                     <figure class="image-box">
-                            <picture>
-                                    <source srcset="images/gallery/thumbs/<%= images[image].name %>_thumb.webp" type="image/webp">
-                                    <img src="images/gallery/thumbs/<%= images[image].name %>_thumb.png" alt="Galerie">
-                                  </picture>
+                        <picture>
+                            <source srcset="images/gallery/thumbs/<%= images[image].name %>_thumb.webp"
+                                type="image/webp">
+                            <img src="images/gallery/thumbs/<%= images[image].name %>_thumb.png" alt="Galerie">
+                        </picture>
 
                         <!--Overlay Box-->
                         <div class="overlay-box">
                             <div class="overlay-inner">
                                 <div class="content">
-                                    <a href="galerie/image/<%= images[image].name %>" data-fancybox="images" data-caption=""
-                                        class="link"><span class="icon flaticon-plus"></span></a>
+                                    <a href="galerie/image/<%= images[image].name %>" data-fancybox="images"
+                                        data-caption="" class="link"><span class="icon flaticon-plus"></span></a>
                                 </div>
                             </div>
                         </div>
