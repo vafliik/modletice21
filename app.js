@@ -4,6 +4,7 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const compression = require('compression');
+const minify = require('express-minify');
 
 const indexRouter = require('./routes/index');
 const galleryRouter = require('./routes/gallery');
@@ -19,7 +20,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 app.use(compression());
-
+app.use(minify());
 
 app.use(express.static(path.join(__dirname, 'public')));
 
