@@ -13,7 +13,7 @@ const detailsRouter = require('./routes/details');
 
 const app = express();
 
-app.locals.price = '10 605 000';
+app.locals.price = '8 484 000';
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
